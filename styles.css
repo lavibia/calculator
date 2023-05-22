@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 50vw;
+    background-color: rgb(199, 199, 199);
+}
+#result{
+    height: 10vh;
+    width: 40vh;
+}
+#alter{
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.keypad{
+    display: flex;
+    flex-direction: column;
+}
+.calcKeys{
+    display: flex;
+    flex-direction: row;
+}
+#numPad{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#numPad >div{
+    flex-grow: 1;
+    width: 33%;
+
+}
+#oprPad{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#oprPad >div{
+    flex-grow: 1;
+    width: 49%;
+}
+
+button{
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+.border{
+    border-radius: 10px;
+}
+.shadow{
+    box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.747);
+}
+.innerShadow{
+    box-shadow: -5px -5px 15px rgba(117, 116, 116, 0.747); ;
+}
+.bgorange{
+    background-color: #c75205;
+    color: white;
+}
+.btnWide{
+    width: 10vh;
+    height: 5vh;
+}
+.btnSmall{
+    height: 5vh;
+    width: 7vh;
+}
+.btnMedium{
+    height: 6vh;
+    width:7vh;
+}
+.btnTall{
+    height: 10vh;
+    width: 7vh;
+}
+.bgwhite{
+    background-color: white;
+    color: #c75205;
+}
+#keyboard{
+    display: flex;
+
+}
+#keyboard >div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+
+}

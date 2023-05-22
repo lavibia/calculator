@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container border shadow">
+        <div id="result" class="border innerShadow bgwhite">
+
+        </div>
+
+        <div class="keypad">
+            <div id="alter">
+                <div><button class="border shadow bgwhite btnWide">Reset</button></div>
+                <div><button class="border shadow bgwhite btnWide">Delete</button></div>
+            </div>
+            <div class="calcKeys">
+                <div id="numPad">
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">1</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">2</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">3</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">4</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">5</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">6</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">7</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">8</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">9</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">0</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">00</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnMedium bgorange">.</button>
+                    </div>
+                </div>
+                <div id="oprPad">
+                    <div class="numbers">
+                        <button class="border shadow btnSmall bgwhite">%</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnSmall bgwhite">-</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnSmall bgwhite">/</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnSmall bgwhite">*</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnTall bgorange">+</button>
+                    </div>
+                    <div class="numbers">
+                        <button class="border shadow btnTall bgorange">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Here are some use cases (abilities your project needs to have):
 
 Your calculator is going to contain functions for all of the basic math operators you typically find on simple calculators, so start by creating functions for the following items and testing them in your browser’s console.
@@ -39,4 +115,5 @@ Make it look nice! This is a great project to practice your CSS skills. At least
 Add a “backspace” button, so the user can undo if they click the wrong number.
 Add keyboard support! You might run into an issue where keys such as (/) might cause you some trouble. Read the MDN documentation for event.preventDefault to help solve this problem. -->
 </body>
+
 </html>
