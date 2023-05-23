@@ -3,55 +3,66 @@
     box-sizing: border-box;
 }
 .container{
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: 80vh;
-    width: 50vw;
-    background-color: rgb(199, 199, 199);
+    width: 300px;
+    background-color: rgba(150, 144, 144, 0.5);
 }
 #result{
+    margin-top: 60px;
+    margin-bottom: 30px;
     height: 10vh;
     width: 40vh;
 }
 #alter{
-    width: 40vh;
+    width: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .keypad{
     display: flex;
+    width:90%;
+    height: 40vh;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 .calcKeys{
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 #numPad{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: max-content;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 #numPad >div{
     flex-grow: 1;
-    width: 33%;
+    width: 30%;
+    margin:2px;
 
 }
 #oprPad{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+
+    width: max-content;
     flex-wrap: wrap;
 }
 #oprPad >div{
     flex-grow: 1;
-    width: 49%;
+    width: 42%;
+    margin: 3px;
 }
 
 button{
@@ -64,7 +75,7 @@ button{
     border-radius: 10px;
 }
 .shadow{
-    box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.747);
+    box-shadow: 5px 5px 5px rgba(117, 116, 116, 0.747);
 }
 .innerShadow{
     box-shadow: -5px -5px 15px rgba(117, 116, 116, 0.747); ;
@@ -104,3 +115,8 @@ button{
     border-radius: 10px;
 
 }
+/* @media (min-width: 600px) {
+    .container {
+      width: 100vw;
+  }  } */
+  
