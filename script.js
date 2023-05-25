@@ -1,23 +1,61 @@
-let firstNumber=0;
+let firstNumber="";
 let operator;
-let secondNumber=0;
+let secondNumber="";
 
+let output = document.getElementById("output");
 
+let numPad= document.querySelectorAll("#numPad > .numbers > button");
+numPad.forEach(num => {
+     num.addEventListener("click", e =>{
+        calculator(e.target);
+     }
+ )});
 
+let oprPad= document.querySelectorAll("#oprPad > .numbers > button");
+oprPad.forEach(o => {
+     o.addEventListener("click", e =>{
+        calculator(e.target);
+     }
+)});
 
+function calculator(btn){
+    if(btn.textContent=="."){
+        btn.setAttribute("disabled","disabled");
+        btn.classList.add("disabled");
+        display(btn.textContent);
+       }else if(btn.closest("#oprPad")){
+        if(firstNumber==""){
+            firstNumber=output.value;
+            output.value="";
+            operator=btn.textContent;
+        }else if(operator!=""){
+            secondNumber=output.value;
+            output.value= operate(firstNumber,operator,secondNumber);
+            firstNumber=output.value;
+            operator=btn.textContent;
+        }
+       }else{
+        display(btn.textContent);
+    }
+}
+
+function display(number){
+        output.value +=number;
+ }
+ 
 function operate(first,opr,second){
     let result="error"
     if(opr==="+"){
-        result=add(a,b);
+        result=add(parseFloat(first),parseFloat(second));
     }
     if(opr==="-"){
-        result=subtract(a,b);
+        result=subtract(parseFloat(first),parseFloat(second));
     }
     if(opr==="*"){
-        result=multiply(a,b);
+        result=multiply(parseFloat(first),parseFloat(second));
     }
     if(opr==="/"){
-        result=devide(a,b);
+        result=devide(parseFloat(first),parseFloat(second));
     }
     return result;
 }
